@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="crew-styles.css">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+
+  <script src="space.js"></script>
+
+  <div class="navigation">
+    <div class="icon-1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+        <g fill="none" fill-rule="evenodd">
+          <circle cx="24" cy="24" r="24" fill="#FFF" />
+          <path fill="#0B0D17"
+            d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z" />
+        </g>
+      </svg>
+    </div>
+    <div class="navigation-options">
+      <div><a href="index.html">Home</a></div>
+      <div><a href="destination-moon.html">Destination</a></div>
+      <div><a href="crew-commander.html">Crew</a></div>
+      <div><a href="technology-capsule.html">Technology</a></div>
+    </div>
+  </div>
+
+  
+
+<div class="crew">
+
+  
+
+ <div class="crew-whole">
+
+  
+  <div class="crew-heading">Meet your crew</div>
+  <div class="rank" id="crew-rank">Commander</div>
+  <div class="rank-name" id="crew-name">Douglas Hurley</div>
+
+  <div class="description" id="bio">
+    Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+  and former NASA astronaut. He launched into space for the third time as 
+  commander of Crew Dragon Demo-2.
+  </div>
+
+  <div class="slider">
+
+    <span class="dots active" onclick="changeToCommander(this)"></span>
+    <span class="dots" onclick="changeToMission(this)"></span>
+    <span class="dots" onclick="changeToPilot(this)"></span>
+    <span class="dots" onclick="changeToEngineer(this)"></span>
+
+  </div>
+
+ </div>
+
+ <div class="picture">
+  <img id="crew-picture" src="./assets/crew/image-douglas-hurley.png">
+ </div>
+
+
+</div>
+
+
+</body>
+</html>

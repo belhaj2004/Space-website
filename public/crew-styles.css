@@ -1,0 +1,265 @@
+body {
+    background-image:url("./assets/crew/background-crew-desktop.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    color: white;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content:space-between;
+    padding-top: 2%;
+    margin-bottom: 7%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.navigation-options {
+    border: 1px;
+    width: 50%;
+    height: 10vh;
+    backdrop-filter: blur(20px);
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Baskervville SC", serif;
+    gap: 15%;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    color: aliceblue;
+    cursor: pointer;
+    font-family: "Baskervville SC", serif;
+}
+
+.crew {
+    padding-left: 3%;
+    font-family: "Baskervville SC", serif;
+    display: flex;
+}
+
+.crew-heading{
+
+    font-size: 180%;
+    margin-bottom: 5%;
+    font-family: "Baskervville SC", serif;
+}
+
+.crew-whole {
+    /* background-color: aquamarine; */
+    width: 47%;
+    padding-top: 7%;
+    font-family: "Baskervville SC", serif;
+}
+
+.picture {
+    /* background-color: aqua; */
+    width: 47%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.rank {
+    font-size: 200%;
+    opacity: 55%;
+    margin-bottom: 3%;
+    font-family: "Baskervville SC", serif;
+}
+
+.rank-name{
+    font-size: 300%;
+    margin-bottom: 5%;
+        font-family: "Baskervville SC", serif;
+}
+
+.description {
+    font-size: 140%;
+    opacity: 70%;
+    margin-bottom: 5%;
+}
+
+.dots {
+    cursor: pointer;
+    height: 1vw; /* Changed from vh to vw for better proportionality */
+    width: 1vw;  /* Use vw to make width proportional to viewport width */
+    margin: 0 1vw;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active {
+    background-color: red; /* Active color: red */
+}
+
+  .slider {
+    display: flex;
+    justify-content: center;
+  }
+
+
+@media only screen and (max-width:768px) {
+    /* For tablets: */
+    body {
+        background-image:url("./assets/crew/background-crew-tablet.jpg");
+        color: white;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        padding-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .icon-1{
+        width: 100%;
+        height: 7vh;
+    }
+    .navigation-options {
+        border: 1px;
+        width: 100%;
+        height: 10vh;
+        backdrop-filter: blur(20px);
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: "Baskervville SC", serif;
+        gap: 5%;
+    }
+
+    .crew {
+        padding-left: 3%;
+        font-family: "Baskervville SC", serif;
+        padding-right: 3%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .crew-whole {
+        /* background-color: aquamarine; */
+        width: 100%;
+    }
+    
+    .picture {
+        /* background-color: aqua; */
+        width: 100%;
+    }
+
+    .dots {
+        cursor: pointer;
+        height: 3vw; /* Changed from vh to vw for better proportionality */
+        width: 3vw;  /* Use vw to make width proportional to viewport width */
+        margin: 0 3vw;
+        margin-bottom: 5vw;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active {
+        background-color: red; /* Active color: red */
+    }
+
+
+}
+
+
+@media only screen and (max-width:375px) {
+    /* For mobile phones: */
+    body {
+        background-image:url("./assets/crew/background-crew-mobile.jpg");
+        color: white;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        padding-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .icon-1{
+        width: 100%;
+        height: 10vh;
+    }
+
+    .navigation-options {
+        border: 1px;
+        width: 100%;
+        height: 10vh;
+        backdrop-filter: blur(20px);
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: "Baskervville SC", serif;
+        gap: 5%;
+    }
+
+    .crew {
+        padding-left: 3%;
+        font-family: "Baskervville SC", serif;
+        padding-right: 3%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .crew-whole {
+        /* background-color: aquamarine; */
+        width: 100%;
+    }
+    
+    .picture {
+        /* background-color: aqua; */
+        width: 100%;
+    }
+    .dots {
+        cursor: pointer;
+        height: 3vw; /* Changed from vh to vw for better proportionality */
+        width: 3vw;  /* Use vw to make width proportional to viewport width */
+        margin: 0 3vw;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+    .active {
+        background-color: red; /* Active color: red */
+    }
+
+}
